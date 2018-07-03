@@ -1,0 +1,21 @@
+Delay Discounting
+
+1. Save emailed pdf in data drive T:\Behavioral Experiments and Data\ Delay Discounting
+2. Manually input:
+  Subj ID: nnnn
+  D.O.S.: mmddyy
+  Dx: {0, 1, 2} for TD, ADHD, ADHD-comorbid, respectively
+  D.O.B.: mm/dd/yy
+  Sibling
+  Order: {1,2,3,4,5,6}
+  Game DD_D25, ..., D50, ... D100, ..., P: {15,30,45,60}
+  
+  
+  
+  
+  
+ 
+ 
+ Troubleshooting:
+1. Check the format in the excel spreadsheet - the code needs all numbers to be in number form, not text!
+2. Check that the excel cells with formulas are copied all the way down to the row being explored.
