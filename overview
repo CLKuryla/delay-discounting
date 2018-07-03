@@ -1,5 +1,9 @@
 Delay Discounting
 
+These scripts help automate the scoring of the delay discounting data for Keri's study
+She used http://www.ncbi.nlm.nih.gov/pubmed/22844143 for the methods - see Reed, D.D., Kaplan, B.A., Brewer, A.T., 2012. A tutorial on the use of Excel 2010 and Excel for Mac 2011 for conducting delay-discounting analyses. J Appl Behav Anal 45, 375–386. https://doi.org/10.1901/jaba.2012.45-375
+
+
 1. Save emailed pdf in data drive T:\Behavioral Experiments and Data\ Delay Discounting
 2. Manually input:
   Subj ID: nnnn
