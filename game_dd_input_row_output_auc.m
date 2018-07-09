@@ -33,9 +33,10 @@ GameDD_D25 = xlsread(gameDdDataXlsPath,'Raw Data',dd25Cell);
 GameDD_D50 = xlsread(gameDdDataXlsPath,'Raw Data',dd50Cell);
 GameDD_D100 = xlsread(gameDdDataXlsPath,'Raw Data',dd100Cell);
 
-% the following is optional - if it errors, simply comment it out
+% the following (finding subject ID number) is optional (not necessary for the script, just nice for double checking)
+% if it errors, simply comment it out
 dcnidCell = strcat('A', int2str(row));
-subj = xlsread(gameDdDataXlsPath,'Raw Data',dd100Cell);
+subj = xlsread(gameDdDataXlsPath,'Raw Data',dcnidCell);
 
 % aucCell = strcat('T', int2str(row));
 % we will output GameDD_AUC in T312 or T306 or whatever
