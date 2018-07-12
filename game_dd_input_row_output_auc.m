@@ -1,5 +1,4 @@
 % Automate game time task calculations for Keri's delay discounting study
-% T:\Behavioral Experiments and Data\Delay Discounting\game_dd_input_row_output_auc_20180626.m
 
 % First, enter data into spreadsheet Game DD Combined Data.xlsx 
 % (located in 'T:\Behavioral Experiments and Data\Delay Discounting\')
@@ -33,9 +32,10 @@ GameDD_D25 = xlsread(gameDdDataXlsPath,'Raw Data',dd25Cell);
 GameDD_D50 = xlsread(gameDdDataXlsPath,'Raw Data',dd50Cell);
 GameDD_D100 = xlsread(gameDdDataXlsPath,'Raw Data',dd100Cell);
 
-% the following (finding subject ID number) is optional (not necessary for the script, just nice for double checking)
-% if it errors, simply comment it out
+% the following reformats is optional - if it errors, simply comment it out
 dcnidCell = strcat('A', int2str(row));
+
+% load subject ID number
 subj = xlsread(gameDdDataXlsPath,'Raw Data',dcnidCell);
 
 % aucCell = strcat('T', int2str(row));
@@ -76,7 +76,7 @@ fprintf('AUC is %d \n',GameDD_AUC);
 % define cell where we want to write output, write output, print update
 aucCell = strcat('T', int2str(row));
 xlswrite(gameDdDataXlsPath,GameDD_AUC,'Raw Data',aucCell);
-fprintf('Money DD spreadsheet updated AUC %d for subject %s (in row %d) \n',GameDD_AUC,subj,row);
+fprintf('Money DD spreadsheet updated AUC %d for subject %d (in row %d) \n',GameDD_AUC,subj,row);
 
 % close excel file
 fid=fopen(gameDdDataXlsPath);
